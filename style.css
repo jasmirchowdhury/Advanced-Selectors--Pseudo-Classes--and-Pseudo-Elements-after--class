@@ -1,0 +1,70 @@
+body{
+    font-family:'arial',sans-serif;
+    background-color: rgb(87, 7, 7);
+    color:#C9D1D9;
+}
+
+
+h1{
+    color:rgb(230, 89, 89);
+}
+/*Attribute Selector*/
+a{
+    color:#8B949E;
+    text-decoration:none;
+
+}
+
+a:hover{
+    color:#0f4dac;
+}
+/*Cild Selector*/
+ul > li{
+    font-weight:bold;
+}
+/*Sibling Selector*/
+h1 + p{
+    background-color: #164c97;
+    padding: 10px;
+    border-radius:5px;
+}
+/* hover Pseudo-class*/
+ul li:hover{
+    color:#4F8CC9;
+    
+}
+/* :nth-child(n) Pseudo-class*/
+ul li:nth-child(3){
+    background-color: #28374d;
+}
+p:not(:first-of-type) {
+
+    text-decoration: underline;
+    
+    }
+    
+    /* ::before Pseudo-element */
+    
+    ul li ::before {
+    
+    content: "🔍 ";
+    
+    }
+    
+    /* ::after Pseudo-element */
+    
+    a::after {
+    
+    content: " 🔍";
+    
+    }
+    
+    /* ::first-letter Pseudo-element */
+    
+    p::first-letter {
+    
+    font-size: 200%;
+    
+    color: #FF7B72;
+    
+    }
